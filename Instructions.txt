@@ -1,19 +1,16 @@
-I am going to be completely honest up front. I have tried figuring out how to run
-the program in a command line and I cannot figure out the error that is occuring.
-Below will be the method I have found in multiple locations of how to run a java program
-in a command line, but it has not worked for me. I am very unfamiliar with trying to run
-a program in this way and worked on trying to find a solution for the better part
-of 3 hours. I tried a couple different ways from the internet and nothing wanted to run.
-I hope this works well as an attempt and you (Mr. Clay) or Dr. Wong will be able to provide 
-guidance/suggestions in the future. I want to learn and understand how it works but it has 
-just been really frustrating so far.
+UBUNTU INSTRUCTIONS-------------------------------------------------------------------
+1. Open command line program
+2. Set cd to the folder where the SortMe.java & Sort Me.txt file are located together
+3. Type javac SortMe.java
+	(This will create some .class files with the same name as your .java file)
+4. Make a new folder called "sortme" in your current cd location and 
+	move the .class files into this folder
+5. Type java sortme/SortMe
+	(This should be followed by the output of the java file)
+6. Select 1 or 2 from the menu choice based on desired sorting order
+	(Should be followed by list sorted in desired order)
 
-UPDATED:
-I figured out how to get it to work in Powershell which will be the instructions provided
-below. I cannot get my ubuntu to work and navigate around in it. So hopefully this will
-work for now until I can learn more about Ubuntu and how to work it. 
-
-UPDATED INSTRUCTIONS-----------------------------------------------------------------
+POWERSHELL INSTRUCTIONS---------------------------------------------------------------
 1. Open command line program
 2. Set cd to the folder where the SortMe.java & Sort Me.txt file are located together
 3. Type javac SortMe.java
@@ -21,20 +18,6 @@ UPDATED INSTRUCTIONS------------------------------------------------------------
 4. Make a new folder called "sortme" in your current cd location and 
 	move the .class files into this folder
 5. Type java sortme.SortMe
-	(This should be followed by the output of the java file which is the sorted names)
-
-
-OUTDATED INSTRUCTIONS----------------------------------------------------------------
-Instructions for how to run the Sort Me program
-1. Open command line program (Ubuntu, Command Prompt, etc.)
-2. Set cd to the folder where the SortMe.java & all relavent files are located
-3. Type javac SortMe.java
-4. Type java SortMe
-
-Alternative method that I found in one location
-
-1. Open command line program (Ubuntu, Command Prompt, etc.)
-2. Set cd to the folder where the SortMe.java & all relavent files are located
-3. Type javac SortMe.java
-4. Type jar cfm SortMe.jar Manifest.txt SortMe.class
-5. Type java -jar SortMe.jar
+	(This should be followed by the output of the java file)
+6. Select 1 or 2 from the menu choice based on desired sorting order
+	(Should be followed by list sorted in desired order)
