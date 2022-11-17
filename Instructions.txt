@@ -1,23 +1,13 @@
 UBUNTU INSTRUCTIONS-------------------------------------------------------------------
 1. Open command line program
-2. Set cd to the folder where the SortMe.java & Sort Me.txt file are located together
-3. Type javac SortMe.java
-	(This will create some .class files with the same name as your .java file)
-4. Make a new folder called "sortme" in your current cd location and 
-	move the .class files into this folder
-5. Type java sortme/SortMe
-	(This should be followed by the output of the java file)
-6. Select 1 or 2 from the menu choice based on desired sorting order
-	(Should be followed by list sorted in desired order)
+2. Set cd to the folder where the SortMe.java, test.java, Sort Me.txt, Sorted.txt, & SortedR.txt files are located together
+3. Type javac test.java
+	(This will create a test.class file)
+4. Make a new folder called "sortme" in your current cd location and move the test.class file into this folder
+5. Type javac SortMe.java
+	(This will create SortMe.class and SortMe$1.class files)
+6. Move SortMe.class and SortMe$1.class files into the "sortme" folder created in step 4
+7. Type java sortme/SortMe
+	(This should be followed by success or failure of tests 1 and 2)
 
-POWERSHELL INSTRUCTIONS---------------------------------------------------------------
-1. Open command line program
-2. Set cd to the folder where the SortMe.java & Sort Me.txt file are located together
-3. Type javac SortMe.java
-	(This will create some .class files with the same name as your .java file)
-4. Make a new folder called "sortme" in your current cd location and 
-	move the .class files into this folder
-5. Type java sortme.SortMe
-	(This should be followed by the output of the java file)
-6. Select 1 or 2 from the menu choice based on desired sorting order
-	(Should be followed by list sorted in desired order)
+
