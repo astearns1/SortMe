@@ -96,7 +96,6 @@ public class SortMe {
         }
         
         System.setOut(console);
-        test.testing();
     }//Close of main method
 }//Close of SortMe Class
 
