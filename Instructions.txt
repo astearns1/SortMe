@@ -1,13 +1,10 @@
 UBUNTU INSTRUCTIONS-------------------------------------------------------------------
 1. Open command line program
 2. Set cd to the folder where the SortMe.java, test.java, Sort Me.txt, Sorted.txt, & SortedR.txt files are located together
-3. Type javac test.java
-	(This will create a test.class file)
-4. Make a new folder called "sortme" in your current cd location and move the test.class file into this folder
-5. Type javac SortMe.java
-	(This will create SortMe.class and SortMe$1.class files)
-6. Move SortMe.class and SortMe$1.class files into the "sortme" folder created in step 4
-7. Type java sortme/SortMe
-	(This should be followed by success or failure of tests 1 and 2)
-
+3. Type javac SortMe.java
+4. Create a new folder called "sortme" and move SortMe.class & SortMe$1.class into this folder
+5. Type javac test.java
+6. Create a new folder called "test" and move test.class into this folder
+7. Type java test/test
+	(Code should run and show success or failure for tests 1 & 2)
 

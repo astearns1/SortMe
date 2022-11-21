@@ -1,12 +1,20 @@
-package sortme;
+package test;
 
 import java.util.*;
 import java.io.*;
 import java.nio.file.*;
+import sortme.SortMe;
 
 public class test {
-    static void testing(){
-                        
+    public static void main(String[] args){
+        try{
+            SortMe sort = new SortMe();
+            sort.main(null);
+        }catch(FileNotFoundException e){
+            System.out.println("Error");
+            System.exit(0);
+        }
+        
         File file1 = new File("Sorted.txt");
         File file2 = new File("StraightSortOutput.txt");
         
@@ -23,7 +31,12 @@ public class test {
             System.out.println("Test 2: Success");
         }else{
             System.out.println("Test 2: Fail");
-        }    
+        }
+    }
+    
+    static void testing(){
+                        
+            
     }
     
     private static boolean CompareFiles(Path file1, Path file2){
