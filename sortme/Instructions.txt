@@ -1,0 +1,7 @@
+UBUNTU INSTRUCTIONS-------------------------------------------------------------------
+1. Open command line program
+2. Set cd to the folder where the SortMe.java, script.txt, Sort Me.txt, Sorted.txt, & SortedR.txt files are located together
+3. Type source script.txt
+	(Should automatically run sort, produce two output files, and run tests on them)
+	(If terminal closes, one of the tests failed)
+

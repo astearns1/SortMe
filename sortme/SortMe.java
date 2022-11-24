@@ -1,15 +1,10 @@
 package sortme;
-/*
-Author: A.J. Stearns
-Date: 09/12/2022
-Program: Sorting App
-Explanation: Sort a list of names by length first then alphabetically
-*/
+
 import java.util.*;
 import java.io.*;
 
 public class SortMe {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         List<String> namesList = new ArrayList<>(); // List to hold the names read in from the file
         
         // No longer needed for menu choice
@@ -67,7 +62,7 @@ public class SortMe {
         });//End of Collections.sort
         
         
-        PrintStream o = new PrintStream(new File("StraightSortOutput.txt"));
+        PrintStream o = new PrintStream(new File("OutputStraightSort.txt"));
         PrintStream console = System.out;
         System.setOut(o);
         
@@ -84,7 +79,7 @@ public class SortMe {
         // Reverses the order of the sorted list to be longest to shortest & Z-A
         Collections.reverse(namesList);
         
-        o = new PrintStream(new File("ReverseSortOutput.txt"));
+        o = new PrintStream(new File("OutputReverseSort.txt"));
         System.setOut(o);
         
         //Ouput the names in reverse sort
@@ -96,6 +91,6 @@ public class SortMe {
         }
         
         System.setOut(console);
-    }//Close of main method
-}//Close of SortMe Class
-
+    }
+    
+}
