@@ -1,0 +1,22 @@
+javac -d . SortMe.java
+java sortme.SortMe
+
+same=`diff OutputStraightSort.txt Sorted.txt`
+len=`expr length "$same"`
+if [ $len -eq 0 ] ; then condition=1; else condition=0; fi
+if [ $condition -eq 1 ] ; then 
+echo "Test Case 1 Success!"
+else 
+echo "Test Case 1 Failed!"
+exit 100
+fi
+
+same=`diff OutputReverseSort.txt SortedR.txt`
+len=`expr length "$same"`
+if [ $len -eq 0 ] ; then condition=1; else condition=0; fi
+if [ $condition -eq 1 ] ; then 
+echo "Test Case 2 Success!" 
+else 
+echo "Test Case 2 Failed!"
+exit 100
+fi
